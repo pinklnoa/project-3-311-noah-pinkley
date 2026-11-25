@@ -1,0 +1,116 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+.page-wrap {
+	min-height: 100vh;
+	padding: 20px;
+	background-size: cover;
+	background-position: center;
+}
+
+.page {
+	max-width: 820px;
+	margin: 0 auto;
+}
+
+.header,
+.section-box {
+	background-color: white;
+	padding: 15px;
+	border: 2px solid black;
+	border-radius: 4px;
+	margin-bottom: 14px;
+}
+
+h1 {
+	color: black;
+	margin: 0 0 10px 0;
+}
+
+.controls,
+.search-form,
+.grid-bar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.grid-bar {
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+
+.search-form input {
+	padding: 8px 10px;
+	border: 2px solid black;
+	border-radius: 4px;
+	font-size: 14px;
+	min-width: 220px;
+}
+
+button {
+	padding: 8px 16px;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 4px;
+	background-color: #eee;
+	font-weight: bold;
+}
+
+button:hover:not(:disabled) {
+	background-color: #ddd;
+}
+
+#main-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+	margin: 12px auto 0 auto;
+}
+
+.box {
+	background: white;
+	border: 3px solid black;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+
+.box img {
+	width: 90px;
+	height: 90px;
+}
+
+.box p {
+	margin: 5px 0 2px 0;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.meta {
+	font-size: 12px;
+	color: #444;
+	text-transform: capitalize;
+}
+
+.lookup-card {
+	max-width: 200px;
+	margin: 12px auto 0 auto;
+}
+
+.error-box {
+	color: red;
+	background: white;
+	border: 2px solid black;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 6px 10px;
+	margin: 8px 0;
+	font-weight: bold;
+}
